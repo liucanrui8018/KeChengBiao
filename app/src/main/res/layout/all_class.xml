@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/monday_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_400">
+
+            <!--.........................星期一...........................-->
+
+            <TextView
+                android:id="@+id/monday_class_1"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_2"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_1"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_3"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_4"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_3"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_5"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_4"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_6"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_5"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_7"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_6"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_8"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_7"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_9"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_8"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_10"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_9"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_11"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_10"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_12"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_11"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_13"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_12"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/monday_class_14"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/monday_class_13"
+                tools:text="TextView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!--.........................星期二...........................-->
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Tuesday_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/class_margin_left"
+            android:background="@color/gray_400"
+            app:layout_constraintLeft_toRightOf="@+id/monday_class">
+
+
+            <TextView
+                android:id="@+id/Tuesday_class_1"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_2"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_1"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_3"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_4"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_3"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_5"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_4"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_6"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_5"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_7"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_6"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_8"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_7"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_9"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_8"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_10"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_9"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_11"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_10"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_12"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_11"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_13"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_12"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Tuesday_class_14"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Tuesday_class_13"
+                tools:text="TextView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!--.........................星期三...........................-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Wednesday_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/class_margin_left"
+            android:background="@color/gray_400"
+            app:layout_constraintLeft_toRightOf="@+id/Tuesday_class">
+
+            <TextView
+                android:id="@+id/Wednesday_class_1"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_2"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_1"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_3"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_4"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_3"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_5"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_4"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_6"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_5"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_7"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_6"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_8"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_7"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_9"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_8"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_10"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_9"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_11"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_10"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_12"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_11"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_13"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_12"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Wednesday_class_14"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Wednesday_class_13"
+                tools:text="TextView" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!--.........................星期四...........................-->
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Thursday_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/class_margin_left"
+            android:background="@color/gray_400"
+            app:layout_constraintLeft_toRightOf="@+id/Wednesday_class">
+
+            <TextView
+                android:id="@+id/Thursday_class_1"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_2"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_1"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_3"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_4"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_3"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_5"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_4"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_6"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_5"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_7"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_6"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_8"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_7"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_9"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_8"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_10"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_9"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_11"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_10"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_12"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_11"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_13"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_12"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Thursday_class_14"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Thursday_class_13"
+                tools:text="TextView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!--.........................星期五...........................-->
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Friday_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/class_margin_left"
+            android:background="@color/gray_400"
+            app:layout_constraintLeft_toRightOf="@+id/Thursday_class">
+
+            <TextView
+                android:id="@+id/Friday_class_1"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_2"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_1"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_3"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_4"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_3"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_5"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_4"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_6"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_5"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_7"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_6"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_8"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_7"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_9"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_8"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_10"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_9"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_11"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_10"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_12"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_11"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_13"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_12"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Friday_class_14"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@+id/Friday_class_13"
+                tools:text="TextView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!--.........................星期六...........................-->
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Saturday_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_400"
+            android:layout_marginLeft="@dimen/class_margin_left"
+            app:layout_constraintLeft_toRightOf="@+id/Friday_class">
+
+            <TextView
+                android:id="@+id/Saturday_class_1"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_2"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_1"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_3"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_4"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_3"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_5"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_4"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_6"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_5"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_7"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_6"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_8"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_7"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_9"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_8"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_10"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_9"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_11"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_10"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_12"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_11"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_13"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_12"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Saturday_class_14"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Saturday_class_13"
+                tools:text="TextView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!--.........................星期日...........................-->
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Sunday_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_400"
+            android:layout_marginLeft="@dimen/class_margin_left"
+            app:layout_constraintLeft_toRightOf="@+id/Saturday_class">
+
+            <TextView
+                android:id="@+id/Sunday_class_1"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_2"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_1"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_3"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_4"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_3"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_5"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_4"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_6"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_5"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_7"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_6"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_8"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_7"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_9"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_8"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_10"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_9"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_11"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_10"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_12"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_11"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_13"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_12"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/Sunday_class_14"
+                android:layout_width="@dimen/class_width"
+                android:layout_height="@dimen/class_number_high"
+                app:layout_constraintTop_toBottomOf="@id/Sunday_class_13"
+                tools:text="TextView" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

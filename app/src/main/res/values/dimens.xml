@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="week_and_month_high">48dp</dimen>
+    <dimen name="week_and_month_width">48dp</dimen>
+    <dimen name="month_width">20dp</dimen>
+
+    <dimen name="class_number_high">42dp</dimen>
+    <dimen name="date_week_high">24dp</dimen>
+
+    <dimen name="class_width">47dp</dimen>
+    <dimen name="class_margin_left">2dp</dimen>
+
+
+</resources>
