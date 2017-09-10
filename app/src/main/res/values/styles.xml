@@ -8,4 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="classNumberStyle">
+        <item name="android:layout_width">@dimen/month_width</item>
+        <item name="android:layout_height">@dimen/class_number_high</item>
+        <item name="android:background">@color/gray_200</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="WeekStyle">
+        <item name="android:layout_width">@dimen/week_and_month_width</item>
+        <item name="android:layout_height">@dimen/date_week_high</item>
+        <item name="android:gravity">bottom|center</item>
+    </style>
+
 </resources>

@@ -14,6 +14,15 @@ import android.widget.Button;
 
 class WeekDialog {
 
+    int week = 1;
+
+    WeekOnclick weekOnclick;
+
+    public WeekDialog(int thisWeek, WeekOnclick weekOnclick) {
+        week = thisWeek;
+        this.weekOnclick = weekOnclick;
+    }
+
     public Dialog onCreateDialog(final Context context, final Button button) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle(R.string.pick_week)
@@ -21,15 +30,18 @@ class WeekDialog {
                     public void onClick(DialogInterface dialog, int which) {
                         // The 'which' argument contains the index position
                         // of the selected item
+                        int week = which + 1;
+
                         String sWeekFormat = context.getResources().getString(R.string.show_week);
-                        String sFinalWeek = String.format(sWeekFormat, which+1);
-
+                        String sFinalWeek = String.format(sWeekFormat, week);
+                        week = week + which + 1;
+                        weekOnclick.addWeek(week);
                         button.setText(sFinalWeek);
-                        Log.e("TAG", "" + which);
-
 
                     }
                 });
         return builder.create();
     }
+
+
 }
