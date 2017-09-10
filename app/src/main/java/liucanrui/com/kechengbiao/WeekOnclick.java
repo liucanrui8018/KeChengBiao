@@ -5,5 +5,5 @@ package liucanrui.com.kechengbiao;
  */
 
 public interface WeekOnclick {
-    public abstract int addWeek(int i);
+    int addWeek(int i);
 }
