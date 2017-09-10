@@ -238,13 +238,13 @@
 
 
         <ScrollView
-            android:layout_width="368dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/week_and_month">
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/class_number"
-                android:layout_width="368dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/week_and_month">
@@ -537,7 +537,7 @@
                 <include
                     app:layout_constraintLeft_toRightOf="@+id/one"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_width="500dp"
                     android:layout_marginLeft="@dimen/class_margin_left"
                     android:id="@+id/all_class"
                     layout="@layout/all_class" />

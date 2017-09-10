@@ -1,15 +1,11 @@
 package liucanrui.com.kechengbiao;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.res.Resources;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.TextView;
 
 
 /**
