@@ -1,11 +1,14 @@
 package liucanrui.com.kechengbiao;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.widget.Button;
+
+import liucanrui.com.kechengbiao.databinding.ActivityMainBinding;
 
 
 /**
@@ -14,13 +17,11 @@ import android.widget.Button;
 
 class WeekDialog {
 
-    int week = 1;
 
-    WeekOnclick weekOnclick;
+    private DateCalculation dateCalculation;
 
-    public WeekDialog(int thisWeek, WeekOnclick weekOnclick) {
-        week = thisWeek;
-        this.weekOnclick = weekOnclick;
+    public WeekDialog( DateCalculation dateCalculation) {
+        this.dateCalculation = dateCalculation;
     }
 
     public Dialog onCreateDialog(final Context context, final Button button) {
@@ -34,8 +35,8 @@ class WeekDialog {
 
                         String sWeekFormat = context.getResources().getString(R.string.show_week);
                         String sFinalWeek = String.format(sWeekFormat, week);
-                        week = week + which + 1;
-                        weekOnclick.addWeek(week);
+
+                        dateCalculation.setDateAndMonth(week);
                         button.setText(sFinalWeek);
 
                     }

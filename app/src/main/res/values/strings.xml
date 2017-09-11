@@ -5,9 +5,9 @@
 
     <string name="show_week">第%1$d周</string>
 
-    <string name="show_month">%1$d月</string>
+    <string name="show_month">%1$s月</string>
 
-    <string name="show_day">%1$d日</string>
+    <string name="show_day">%1$s日</string>
 
 
     <string name="default_week">第1周</string>

@@ -1,6 +1,7 @@
 package liucanrui.com.kechengbiao;
 
 import android.app.Dialog;
+import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -9,46 +10,46 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+
+import java.text.ParseException;
+
+import liucanrui.com.kechengbiao.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
     Button week_button;
-    TextView mMonth;
-    TextView mMonday, mTuesday, mWednesday, mThursday, mFriday, mSaturday, mSunday;
     DateCalculation dateCalculation;
 
-    WeekOnclick weekOnclick = new WeekOnclick() {
-        @Override
-        public int addWeek(int i) {
+    ActivityMainBinding mainBinding;
 
-
-
-
-            return 0;
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dateCalculation = new DateCalculation();
+        mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        findView();
+        try {
+            dateCalculation = new DateCalculation(mainBinding, this);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+        week_button = (Button) findViewById(R.id.pick_week);
 
         week_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Dialog dialog = new WeekDialog(dateCalculation.getWeek(), weekOnclick).onCreateDialog(MainActivity.this, week_button);
+                Dialog dialog = new WeekDialog(dateCalculation).onCreateDialog(MainActivity.this, week_button);
                 dialog.show();
             }
         });
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-
-
-        setMonth();
 
 
 //        mTextView = (TextView) findViewById(R.id.textView);
@@ -57,38 +58,10 @@ public class MainActivity extends AppCompatActivity {
 //        lp.height = lp.height * 4;
 //        mTextView.setLayoutParams(lp);
 
+        long i = dateCalculation.thisWeek();
 
+        dateCalculation.setDateAndMonth(i);
     }
-
-
-    private void findView() {
-        week_button = (Button) findViewById(R.id.pick_week);
-        mMonth = (TextView) findViewById(R.id.month);
-
-        mMonday = (TextView) findViewById(R.id.date1);
-        mTuesday = (TextView) findViewById(R.id.date2);
-        mWednesday = (TextView) findViewById(R.id.date3);
-        mThursday = (TextView) findViewById(R.id.date4);
-        mFriday = (TextView) findViewById(R.id.date5);
-        mSaturday = (TextView) findViewById(R.id.date6);
-        mSunday = (TextView) findViewById(R.id.date7);
-
-
-    }
-
-
-    private void setMonth() {
-
-
-        String sMonthFormat = getResources().getString(R.string.show_month);
-
-        String sFinalMonth = String.format(sMonthFormat, dateCalculation.getMonth());
-
-        mMonth.setText(sFinalMonth);
-
-    }
-
-
 
 
     @Override

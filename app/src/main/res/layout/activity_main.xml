@@ -452,18 +452,6 @@
                     app:layout_constraintLeft_toRightOf="@id/fourteen"
                     app:layout_constraintRight_toRightOf="parent" />
 
-                <!--<TextView-->
-                <!--android:id="@+id/textView"-->
-                <!--android:layout_width="@dimen/class_width"-->
-                <!--android:layout_height="@dimen/class_number_high"-->
-                <!--android:background="@drawable/class_background"-->
-                <!--android:text="TextView"-->
-                <!--android:gravity="center"-->
-                <!--app:layout_constraintTop_toTopOf="@id/one"-->
-                <!--android:layout_marginTop="1dp"-->
-                <!--app:layout_constraintLeft_toRightOf="@+id/one"-->
-                <!--android:layout_marginLeft="1dp"/>-->
-
                 <include
                     app:layout_constraintLeft_toRightOf="@+id/one"
                     android:layout_height="wrap_content"
