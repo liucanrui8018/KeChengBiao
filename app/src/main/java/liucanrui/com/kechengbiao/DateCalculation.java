@@ -2,6 +2,7 @@ package liucanrui.com.kechengbiao;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.util.Log;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -20,12 +21,15 @@ public class DateCalculation {
     private static Date START_SCHOOL_DAY;
 
 
-
     private Context mContext;
 
     private final static long MILLISECOND_ON_DAY = 24 * 60 * 60 * 1000;
 
     private ActivityMainBinding mBinding;
+
+    private Date mDate;
+
+    private int background;
 
     public DateCalculation(ActivityMainBinding mBinding, Context context) throws ParseException {
 
@@ -34,27 +38,21 @@ public class DateCalculation {
         START_SCHOOL_DAY = format.parse("2017-09-04");
         this.mBinding = mBinding;
         mContext = context;
+        mDate = new Date();
     }
 
-    long thisWeek() {
-        Date date = new Date();
+    int thisWeek() {
 
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-
-        System.out.println(df.format(START_SCHOOL_DAY) + "    .........");
-
-        long diff = date.getTime() - START_SCHOOL_DAY.getTime() ;
-        System.out.println(diff + "    .........");
-
+        long diff = mDate.getTime() - START_SCHOOL_DAY.getTime();
 
         long days = diff / MILLISECOND_ON_DAY;
 
 
         long thisWeek = days / 7;
 
-        if (thisWeek > 20) return 20;
+        if (thisWeek > 19) return 20;
 
-        return thisWeek;
+        return (int) (thisWeek + 1);
     }
 
 
@@ -62,7 +60,7 @@ public class DateCalculation {
     void setDateAndMonth(long week) {
 
 
-        long diff = (week) * 7 * MILLISECOND_ON_DAY;
+        long diff = (week - 1) * 7 * MILLISECOND_ON_DAY;
 
         Date date = new Date(START_SCHOOL_DAY.getTime() + diff);
 
@@ -93,6 +91,65 @@ public class DateCalculation {
         mBinding.date5.setText(date5);
         mBinding.date6.setText(date6);
         mBinding.date7.setText(date7);
+
+        if (week == thisWeek()) {
+
+
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(mDate);
+
+            background = cal.get(Calendar.DAY_OF_WEEK);
+
+            switch (background) {
+                case 1:
+                    mBinding.ConSunday.setBackgroundColor(mContext.getResources().getColor(R.color.colorAccent));
+                    break;
+                case 2:
+                    mBinding.ConMonday.setBackgroundColor(mContext.getResources().getColor(R.color.colorAccent));
+                    break;
+                case 3:
+                    mBinding.ConTuesday.setBackgroundColor(mContext.getResources().getColor(R.color.colorAccent));
+                    break;
+                case 4:
+                    mBinding.ConWednesday.setBackgroundColor(mContext.getResources().getColor(R.color.colorAccent));
+                    break;
+                case 5:
+                    mBinding.ConThursday.setBackgroundColor(mContext.getResources().getColor(R.color.colorAccent));
+                    break;
+                case 6:
+                    mBinding.ConFriday.setBackgroundColor(mContext.getResources().getColor(R.color.colorAccent));
+                    break;
+                case 7:
+                    mBinding.ConSaturday.setBackgroundColor(mContext.getResources().getColor(R.color.colorAccent));
+                    break;
+
+            }
+        } else {
+            switch (background) {
+                case 1:
+                    mBinding.ConSunday.setBackgroundColor(mContext.getResources().getColor(R.color.gray_300));
+                    break;
+                case 2:
+                    mBinding.ConMonday.setBackgroundColor(mContext.getResources().getColor(R.color.gray_300));
+                    break;
+                case 3:
+                    mBinding.ConTuesday.setBackgroundColor(mContext.getResources().getColor(R.color.gray_300));
+                    break;
+                case 4:
+                    mBinding.ConWednesday.setBackgroundColor(mContext.getResources().getColor(R.color.gray_300));
+                    break;
+                case 5:
+                    mBinding.ConThursday.setBackgroundColor(mContext.getResources().getColor(R.color.gray_300));
+                    break;
+                case 6:
+                    mBinding.ConFriday.setBackgroundColor(mContext.getResources().getColor(R.color.gray_300));
+                    break;
+                case 7:
+                    mBinding.ConSaturday.setBackgroundColor(mContext.getResources().getColor(R.color.gray_300));
+                    break;
+
+            }
+        }
 
 
     }

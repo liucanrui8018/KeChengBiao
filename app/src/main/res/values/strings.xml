@@ -40,6 +40,17 @@
     <string name="_13">13</string>
     <string name="_14">14</string>
     <string name="space" />
+    <string name="search_hint">搜索班级</string>
+
+    <string name="content_authority">liucanrui.com.kechengbiao</string>
+
+    <string name="peek_class">选择班级</string>
+    <string name="search_instructions">Use the search box in the Action Bar to look up a word</string>
+    <plurals name="search_results">
+        <item quantity="one">%1$d result for \"%2$s\": </item>
+        <item quantity="other">%1$d results for \"%2$s\": </item>
+    </plurals>
+    <string name="action_search">搜索</string>
 
 
 </resources>

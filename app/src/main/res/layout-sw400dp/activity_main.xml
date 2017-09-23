@@ -26,8 +26,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/week_and_month_high"
                 android:layout_gravity="center"
+                android:textColor="@color/TextPrimaryColor"
                 android:background="@color/colorPrimary"
                 android:text="@string/default_week" />
+
+            <TextView
+                android:id="@+id/class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@+id/pick_week"
+                android:textColor="@color/TextPrimaryColor"
+                android:background="@color/colorPrimary"/>
 
         </android.support.v7.widget.Toolbar>
 
@@ -226,95 +235,97 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/week_and_month">
 
-            <android.support.constraint.ConstraintLayout
+
+            <RelativeLayout
                 android:id="@+id/class_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/week_and_month">
+                android:orientation="horizontal">
 
-                <TextView
+
+            <TextView
                     android:id="@+id/one"
                     style="@style/classNumberStyle"
                     android:text="@string/_1" />
+
 
                 <TextView
                     android:id="@+id/two"
                     style="@style/classNumberStyle"
                     android:text="@string/_2"
-                    app:layout_constraintTop_toBottomOf="@+id/one" />
+                    android:layout_below="@+id/one" />
 
                 <TextView
                     android:id="@+id/three"
                     style="@style/classNumberStyle"
                     android:text="@string/_3"
-                    app:layout_constraintTop_toBottomOf="@+id/two" />
+                    android:layout_below="@+id/two" />
 
                 <TextView
                     android:id="@+id/four"
                     style="@style/classNumberStyle"
                     android:text="@string/_4"
-                    app:layout_constraintTop_toBottomOf="@+id/three" />
+                    android:layout_below="@+id/three" />
 
                 <TextView
                     android:id="@+id/fire"
                     style="@style/classNumberStyle"
                     android:text="@string/_5"
-                    app:layout_constraintTop_toBottomOf="@+id/four" />
+                    android:layout_below="@+id/four" />
 
                 <TextView
                     android:id="@+id/six"
                     style="@style/classNumberStyle"
                     android:text="@string/_6"
-                    app:layout_constraintTop_toBottomOf="@+id/fire" />
+                    android:layout_below="@+id/fire" />
 
                 <TextView
                     android:id="@+id/seven"
                     style="@style/classNumberStyle"
                     android:text="@string/_7"
-                    app:layout_constraintTop_toBottomOf="@+id/six" />
+                    android:layout_below="@+id/six" />
 
                 <TextView
                     android:id="@+id/eight"
                     style="@style/classNumberStyle"
                     android:text="@string/_8"
-                    app:layout_constraintTop_toBottomOf="@+id/seven" />
+                    android:layout_below="@+id/seven" />
 
                 <TextView
                     android:id="@+id/nine"
                     style="@style/classNumberStyle"
                     android:text="@string/_9"
-                    app:layout_constraintTop_toBottomOf="@+id/eight" />
+                    android:layout_below="@+id/eight" />
 
                 <TextView
                     android:id="@+id/ten"
                     style="@style/classNumberStyle"
                     android:text="@string/_10"
-                    app:layout_constraintTop_toBottomOf="@+id/nine" />
+                    android:layout_below="@+id/nine" />
 
                 <TextView
                     android:id="@+id/eleven"
                     style="@style/classNumberStyle"
                     android:text="@string/_11"
-                    app:layout_constraintTop_toBottomOf="@+id/ten" />
+                    android:layout_below="@+id/ten" />
 
                 <TextView
                     android:id="@+id/twelve"
                     style="@style/classNumberStyle"
                     android:text="@string/_12"
-                    app:layout_constraintTop_toBottomOf="@+id/eleven" />
+                    android:layout_below="@+id/eleven" />
 
                 <TextView
                     android:id="@+id/thirteen"
                     style="@style/classNumberStyle"
                     android:text="@string/_13"
-                    app:layout_constraintTop_toBottomOf="@+id/twelve" />
+                    android:layout_below="@+id/twelve" />
 
                 <TextView
                     android:id="@+id/fourteen"
                     style="@style/classNumberStyle"
                     android:text="@string/_14"
-                    app:layout_constraintTop_toBottomOf="@+id/thirteen" />
+                    android:layout_below="@+id/thirteen" />
 
                 <TextView
                     android:id="@+id/space"
@@ -325,142 +336,101 @@
                     app:layout_constraintTop_toBottomOf="@+id/fourteen" />
 
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/one"
-                    app:layout_constraintLeft_toRightOf="@id/one"
-                    app:layout_constraintRight_toRightOf="parent" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/two"
-                    app:layout_constraintLeft_toRightOf="@id/two"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/one" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/three"
-                    app:layout_constraintLeft_toRightOf="@id/three"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/two" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/four"
-                    app:layout_constraintLeft_toRightOf="@id/four"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/three" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/fire"
-                    app:layout_constraintLeft_toRightOf="@id/fire"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/four" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/six"
-                    app:layout_constraintLeft_toRightOf="@id/six"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/fire" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/seven"
-                    app:layout_constraintLeft_toRightOf="@id/seven"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/six" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/eight"
-                    app:layout_constraintLeft_toRightOf="@id/eight"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/seven" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/nine"
-                    app:layout_constraintLeft_toRightOf="@id/nine"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/eight" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/ten"
-                    app:layout_constraintLeft_toRightOf="@id/ten"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/nine" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/eleven"
-                    app:layout_constraintLeft_toRightOf="@id/eleven"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/ten" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/twelve"
-                    app:layout_constraintLeft_toRightOf="@id/twelve"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/eleven" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/thirteen"
-                    app:layout_constraintLeft_toRightOf="@id/thirteen"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/twelve" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="0dp"
                     android:background="@color/gray_200"
-                    app:layout_constraintBottom_toBottomOf="@id/fourteen"
-                    app:layout_constraintLeft_toRightOf="@id/fourteen"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    android:layout_alignBottom="@id/thirteen" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_200"
+                    android:layout_alignBottom="@id/fourteen" />
 
 
-                <include
-                    app:layout_constraintLeft_toRightOf="@+id/one"
-                    android:layout_height="wrap_content"
-                    android:layout_width="500dp"
-                    android:layout_marginLeft="@dimen/class_margin_left"
-                    android:id="@+id/all_class"
-                    layout="@layout/all_class" />
 
-            </android.support.constraint.ConstraintLayout>
+                <RelativeLayout
+                    android:id="@+id/id_all_class"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </RelativeLayout>
+
+            </RelativeLayout>
         </ScrollView>
 
 
